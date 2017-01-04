@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		7D767D181E1D593C0006D624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D767D171E1D593C0006D624 /* AppDelegate.swift */; };
-		7D767D1A1E1D593C0006D624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D767D191E1D593C0006D624 /* ViewController.swift */; };
+		7D767D1A1E1D593C0006D624 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D767D191E1D593C0006D624 /* MainViewController.swift */; };
 		7D767D1D1E1D593D0006D624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D767D1B1E1D593C0006D624 /* Main.storyboard */; };
 		7D767D1F1E1D593D0006D624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D767D1E1E1D593D0006D624 /* Assets.xcassets */; };
 		7D767D221E1D593D0006D624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D767D201E1D593D0006D624 /* LaunchScreen.storyboard */; };
 		7D767D2D1E1D593D0006D624 /* hangmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D767D2C1E1D593D0006D624 /* hangmanTests.swift */; };
 		7D767D381E1D593D0006D624 /* hangmanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D767D371E1D593D0006D624 /* hangmanUITests.swift */; };
+		7D767D4B1E1D690D0006D624 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D767D4A1E1D690D0006D624 /* Player.swift */; };
+		7D767D4D1E1D69250006D624 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D767D4C1E1D69250006D624 /* Game.swift */; };
+		7D767D531E1D6A2A0006D624 /* ServiceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D767D521E1D6A2A0006D624 /* ServiceUtil.swift */; };
+		7D767D561E1D76910006D624 /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D767D551E1D76910006D624 /* AlertUtil.swift */; };
+		7D767D591E1D7EE10006D624 /* TopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D767D571E1D7EE10006D624 /* TopicTableViewController.swift */; };
+		7D767D5A1E1D7EE10006D624 /* TopicTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D767D581E1D7EE10006D624 /* TopicTableViewController.xib */; };
+		7D767D5C1E1D7F320006D624 /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D767D5B1E1D7F320006D624 /* TopicView.swift */; };
+		7D767D5E1E1D88030006D624 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D767D5D1E1D88030006D624 /* Topic.swift */; };
+		7D767D601E1D880C0006D624 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D767D5F1E1D880C0006D624 /* Word.swift */; };
+		7D767D621E1D89EF0006D624 /* TopicListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D767D611E1D89EF0006D624 /* TopicListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,7 @@
 /* Begin PBXFileReference section */
 		7D767D141E1D593C0006D624 /* hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D767D171E1D593C0006D624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D767D191E1D593C0006D624 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D767D191E1D593C0006D624 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7D767D1C1E1D593D0006D624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D767D1E1E1D593D0006D624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D767D211E1D593D0006D624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,16 @@
 		7D767D331E1D593D0006D624 /* hangmanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hangmanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D767D371E1D593D0006D624 /* hangmanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hangmanUITests.swift; sourceTree = "<group>"; };
 		7D767D391E1D593D0006D624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D767D4A1E1D690D0006D624 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		7D767D4C1E1D69250006D624 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		7D767D521E1D6A2A0006D624 /* ServiceUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceUtil.swift; sourceTree = "<group>"; };
+		7D767D551E1D76910006D624 /* AlertUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
+		7D767D571E1D7EE10006D624 /* TopicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTableViewController.swift; sourceTree = "<group>"; };
+		7D767D581E1D7EE10006D624 /* TopicTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicTableViewController.xib; sourceTree = "<group>"; };
+		7D767D5B1E1D7F320006D624 /* TopicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicView.swift; sourceTree = "<group>"; };
+		7D767D5D1E1D88030006D624 /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		7D767D5F1E1D880C0006D624 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		7D767D611E1D89EF0006D624 /* TopicListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +117,9 @@
 		7D767D161E1D593C0006D624 /* hangman */ = {
 			isa = PBXGroup;
 			children = (
-				7D767D171E1D593C0006D624 /* AppDelegate.swift */,
-				7D767D191E1D593C0006D624 /* ViewController.swift */,
-				7D767D1B1E1D593C0006D624 /* Main.storyboard */,
+				7D767D481E1D68160006D624 /* model */,
+				7D767D451E1D59A00006D624 /* application */,
 				7D767D1E1E1D593D0006D624 /* Assets.xcassets */,
-				7D767D201E1D593D0006D624 /* LaunchScreen.storyboard */,
 				7D767D231E1D593D0006D624 /* Info.plist */,
 			);
 			path = hangman;
@@ -123,6 +141,90 @@
 				7D767D391E1D593D0006D624 /* Info.plist */,
 			);
 			path = hangmanUITests;
+			sourceTree = "<group>";
+		};
+		7D767D451E1D59A00006D624 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				7D767D541E1D74A90006D624 /* util */,
+				7D767D511E1D69E90006D624 /* service */,
+				7D767D471E1D67D80006D624 /* view */,
+				7D767D491E1D681C0006D624 /* presenter */,
+				7D767D171E1D593C0006D624 /* AppDelegate.swift */,
+				7D767D201E1D593D0006D624 /* LaunchScreen.storyboard */,
+			);
+			name = application;
+			sourceTree = "<group>";
+		};
+		7D767D471E1D67D80006D624 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7D767D501E1D69730006D624 /* settings */,
+				7D767D4F1E1D694C0006D624 /* topicList */,
+				7D767D4E1E1D69340006D624 /* login */,
+				7D767D191E1D593C0006D624 /* MainViewController.swift */,
+				7D767D1B1E1D593C0006D624 /* Main.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		7D767D481E1D68160006D624 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7D767D4A1E1D690D0006D624 /* Player.swift */,
+				7D767D4C1E1D69250006D624 /* Game.swift */,
+				7D767D5D1E1D88030006D624 /* Topic.swift */,
+				7D767D5F1E1D880C0006D624 /* Word.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		7D767D491E1D681C0006D624 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7D767D611E1D89EF0006D624 /* TopicListPresenter.swift */,
+			);
+			name = presenter;
+			sourceTree = "<group>";
+		};
+		7D767D4E1E1D69340006D624 /* login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		7D767D4F1E1D694C0006D624 /* topicList */ = {
+			isa = PBXGroup;
+			children = (
+				7D767D5B1E1D7F320006D624 /* TopicView.swift */,
+				7D767D571E1D7EE10006D624 /* TopicTableViewController.swift */,
+				7D767D581E1D7EE10006D624 /* TopicTableViewController.xib */,
+			);
+			name = topicList;
+			sourceTree = "<group>";
+		};
+		7D767D501E1D69730006D624 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = settings;
+			sourceTree = "<group>";
+		};
+		7D767D511E1D69E90006D624 /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = service;
+			sourceTree = "<group>";
+		};
+		7D767D541E1D74A90006D624 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				7D767D521E1D6A2A0006D624 /* ServiceUtil.swift */,
+				7D767D551E1D76910006D624 /* AlertUtil.swift */,
+			);
+			name = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +337,7 @@
 				7D767D221E1D593D0006D624 /* LaunchScreen.storyboard in Resources */,
 				7D767D1F1E1D593D0006D624 /* Assets.xcassets in Resources */,
 				7D767D1D1E1D593D0006D624 /* Main.storyboard in Resources */,
+				7D767D5A1E1D7EE10006D624 /* TopicTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +362,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D767D1A1E1D593C0006D624 /* ViewController.swift in Sources */,
+				7D767D1A1E1D593C0006D624 /* MainViewController.swift in Sources */,
+				7D767D5E1E1D88030006D624 /* Topic.swift in Sources */,
+				7D767D4B1E1D690D0006D624 /* Player.swift in Sources */,
+				7D767D591E1D7EE10006D624 /* TopicTableViewController.swift in Sources */,
+				7D767D531E1D6A2A0006D624 /* ServiceUtil.swift in Sources */,
+				7D767D5C1E1D7F320006D624 /* TopicView.swift in Sources */,
 				7D767D181E1D593C0006D624 /* AppDelegate.swift in Sources */,
+				7D767D621E1D89EF0006D624 /* TopicListPresenter.swift in Sources */,
+				7D767D601E1D880C0006D624 /* Word.swift in Sources */,
+				7D767D561E1D76910006D624 /* AlertUtil.swift in Sources */,
+				7D767D4D1E1D69250006D624 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

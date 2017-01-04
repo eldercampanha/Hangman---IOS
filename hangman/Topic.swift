@@ -10,4 +10,6 @@ import UIKit
 
 class Topic: NSObject {
 
+    var title: String!
+    var words: [Word]?
 }

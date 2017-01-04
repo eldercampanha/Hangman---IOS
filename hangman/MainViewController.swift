@@ -15,18 +15,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let test : ServiceUtil = ServiceUtil();
-        
-        test.executeRequest(url: "http://www.mocky.io/v2/586d10cb120000750e11f176", success: { _ in }, fail: {_ in })
-
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
+    @IBAction func btnLoginClicked(_ sender: UIButton) {
+        
+        
+    }
+
+    @IBAction func btnPlayClicked(_ sender: UIButton) {
+        
+        
+    }
 }
 

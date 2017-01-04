@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Item: NSObject {
+class Word: NSObject {
 
     var wordDescription: String!
     var level: Int!

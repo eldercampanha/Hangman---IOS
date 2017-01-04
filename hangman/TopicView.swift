@@ -8,6 +8,10 @@
 
 import UIKit
 
-class TopicView: NSObject {
-
+protocol  TopicView {
+    
+    func startLoading()
+    func finishLoading()
+//    func getTopicList(topics : [Topic])
+    
 }
