@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let test : ServiceUtil = ServiceUtil();
+        
+        test.executeRequest(url: "http://www.mocky.io/v2/586d10cb120000750e11f176", success: { _ in }, fail: {_ in })
+
+        
     }
 
     override func didReceiveMemoryWarning() {
